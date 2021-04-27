@@ -1,4 +1,5 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](https://opensource.org/licenses/Apache-2.0)
+[![](https://jitpack.io/v/artyommironov/colorpicker.svg)](https://jitpack.io/#artyommironov/colorpicker)
 
 # colorpicker
 Simple color picker for Android
@@ -7,17 +8,17 @@ Simple color picker for Android
 In root `build.gradle`
 ```
 allprojects {
-  repositories {
-    ...
-    maven { url 'https://jitpack.io' }
-  }
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
 }
 ```
 
 In module `build.gradle`
 ```
 dependencies {
-  implementation 'com.github.artyommironov:anyadapter:1.0.0'
+    implementation 'com.github.artyommironov:anyadapter:1.0.0'
 }
 ```
 
