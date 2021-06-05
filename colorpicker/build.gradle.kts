@@ -4,10 +4,8 @@ plugins {
   id("maven-publish")
 }
 
-setupDependencyUpdates()
-
 android {
-  compileSdkVersion(Sdk.compile)
+  compileSdkVersion(30)
 
   defaultConfig {
     minSdkVersion(14)
@@ -28,10 +26,10 @@ android {
 }
 
 dependencies {
-  implementation(Libs.kotlinStdLib)
-  implementation(Libs.androidxKtx)
-  implementation(Libs.androidxAnnotation)
-  testImplementation(Libs.kotlinTestJunit)
+  implementation(libs.kotlinStdlib)
+  implementation(libs.androidxCoreKtx)
+  implementation(libs.androidxAnnotation)
+  testImplementation(libs.kotlinTestJunit)
 }
 
 afterEvaluate {

@@ -4,7 +4,8 @@ plugins {
 }
 
 android {
-  compileSdkVersion(Sdk.compile)
+  val sdkVersion = 30
+  compileSdkVersion(sdkVersion)
 
   buildFeatures {
     viewBinding = true
@@ -13,7 +14,7 @@ android {
   defaultConfig {
     applicationId = "com.artyommironov.colorpickersample"
     minSdkVersion(14)
-    targetSdkVersion(Sdk.target)
+    targetSdkVersion(sdkVersion)
     versionCode = 1
     versionName = "1.0"
   }
@@ -21,5 +22,5 @@ android {
 
 dependencies {
   implementation(project(":colorpicker"))
-  implementation(Libs.kotlinStdLib)
+  implementation(libs.kotlinStdlib)
 }
